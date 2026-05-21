@@ -6,8 +6,13 @@ public class Entry
     public string _promptText = "";
     public string _entryText = "";
 
+    // I added the mood entry
+    public string _mood = "";
+
     public void Display()
     {
-
+        Console.WriteLine($"{_date} - {_promptText}");
+        Console.WriteLine($"Mood: {_mood}");
+        Console.WriteLine(_entryText);
     }
 }
